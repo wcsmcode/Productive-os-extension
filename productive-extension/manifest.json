@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Productive OS - Silent Blocker",
+  "version": "1.0.0",
+  "description": "Background script to block distracting website when using productive os",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "http://localhost:5173/*", 
+      "https://*.productiveos.vercel.app/*"
+    ]
+  }
+}
