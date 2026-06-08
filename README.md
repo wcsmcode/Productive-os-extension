@@ -2,7 +2,7 @@
 
 > A minimalist, zero-friction operating environment built for deep work. 
 > Execute your day inside a single browser tab.
-
+> Important: Need productiveos.vercel.app to activate (in pomodoro mini-app).
 ---
 
 ##  Installation (Local Developer Mode)
